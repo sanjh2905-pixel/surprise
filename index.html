@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Best Friend's Day ❤️</title>
+<link rel="stylesheet" href="cutu.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="card">
+    <h1>Happy Best Friend's Day ❤️</h1>
+
+    <p>
+        Thank you for being the reason behind so many smiles,
+        memories, and unforgettable moments.
+    </p>
+
+    <div class="buttons">
+        <button onclick="openGallery()">📸 Our Memories</button>
+        <button onclick="playMusic()">🎵 Play Music</button>
+    </div>
+</div>
+
+<!-- Gallery -->
+<div id="gallery" class="gallery">
+    <span class="close" onclick="closeGallery()">&times;</span>
+
+    <div class="gallery-content">
+        <img src="images/photo1.jpg" alt="">
+        <img src="images/photo2.jpg" alt="">
+        <img src="images/photo3.jpg" alt="">
+        <img src="images/photo4.jpg" alt="">
+    </div>
+</div>
+
+<audio id="music" loop>
+    <source src="Jaan Ban Gaye - Lyrical _ Khuda Haafiz _ Vidyut J _ Shivaleeka O _ Mithoon Ft. Vishal M, Asees Kaur.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function openGallery(){
+    document.getElementById("gallery").style.display="flex";
+}
+
+function closeGallery(){
+    document.getElementById("gallery").style.display="none";
+}
+
+function playMusic(){
+    document.getElementById("music").play();
+}
+
+// Floating Hearts
+for(let i=0;i<25;i++){
+    let heart=document.createElement("span");
+    heart.classList.add("heart");
+    heart.innerHTML="❤";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(Math.random()*5+5)+"s";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
