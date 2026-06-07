@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Best Friend's Day ❤️</title>
-<link rel="stylesheet" href="cutu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Best Friend's Day Cutuuu ❤️</title>
+    <link rel="stylesheet" href="cutu.css">
 </head>
 <body>
 
-<div class="hearts"></div>
+<div class="hearts">
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+</div>
 
-<div class="card">
-    <h1>Happy Best Friend's Day ❤️</h1>
+<section class="hero">
+    <h1>Happy Best Friend's Day</h1>
+    <h2>Cutuuu ❤️</h2>
 
     <p>
-        Thank you for being the reason behind so many smiles,
-        memories, and unforgettable moments.
+        Some people become a chapter in life.
+        You became one of my favorite pages.
+    </p>
+</section>
+
+<section class="music-section">
+    <h2>🎵 For you betuu</h2>
+
+    <audio controls>
+        <source src="Jaan Ban Gaye - Lyrical _ Khuda Haafiz _ Vidyut J _ Shivaleeka O _ Mithoon Ft. Vishal M, Asees Kaur.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</section>
+
+<section class="letter">
+    <div class="glass-card">
+
+        <h2>A Letter For You 💌</h2>
+
+        <p>
+            Dear Cutuuu,
+            <br><br>
+            Thank you for all the memories,
+            the laughter, the random conversations,
+            and the moments that made ordinary days special.
+            <br><br>
+            Life keeps changing, but some memories stay.
+            You're part of many of mine.
+            <br><br>
+            Happy Best Friend's Day ❤️
+        </p>
+
+    </div>
+</section>
+
+<section class="gallery">
+
+    <h2>📸 Our Memories</h2>
+
+    <div class="photos">
+
+        <div class="photo">
+            <img src="WhatsApp Image 2026-06-07 at 9.40.33 PM.jpeg">
+        </div>
+
+        <div class="photo">
+            <img src="Screenshot 2026-06-07 214749.png">
+        </div>
+
+        <div class="photo">
+            <img src="baccha.jpeg">
+        </div>
+
+        <div class="photo">
+            <img src="Screenshot 2026-06-07 214810.png">
+        </div>
+
+    </div>
+</section>
+
+<section class="reasons">
+
+    <h2>Why You're Special ❤️</h2>
+
+    <div class="cards">
+
+        <div class="card">✨ Your Smile</div>
+
+        <div class="card">🌙 Your Presence</div>
+
+        <div class="card">🧿 For what you are</div>
+
+        <div class="card">💖 Everything you have</div>
+
+    </div>
+
+</section>
+
+<section class="final">
+
+    <h1>Cutuuu ❤️</h1>
+
+    <p>
+        Thank you for being part of my story.
     </p>
 
-    <div class="buttons">
-        <button onclick="openGallery()">📸 Our Memories</button>
-        <button onclick="playMusic()">🎵 Play Music</button>
-    </div>
-</div>
+    <h2>Happy Best Friend's Day 🌹</h2>
 
-<!-- Gallery -->
-<div id="gallery" class="gallery">
-    <span class="close" onclick="closeGallery()">&times;</span>
-
-    <div class="gallery-content">
-        <img src="images/photo1.jpg" alt="">
-        <img src="images/photo2.jpg" alt="">
-        <img src="images/photo3.jpg" alt="">
-        <img src="images/photo4.jpg" alt="">
-    </div>
-</div>
-
-<audio id="music" loop>
-    <source src="Jaan Ban Gaye - Lyrical _ Khuda Haafiz _ Vidyut J _ Shivaleeka O _ Mithoon Ft. Vishal M, Asees Kaur.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function openGallery(){
-    document.getElementById("gallery").style.display="flex";
-}
-
-function closeGallery(){
-    document.getElementById("gallery").style.display="none";
-}
-
-function playMusic(){
-    document.getElementById("music").play();
-}
-
-// Floating Hearts
-for(let i=0;i<25;i++){
-    let heart=document.createElement("span");
-    heart.classList.add("heart");
-    heart.innerHTML="❤";
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.animationDuration=(Math.random()*5+5)+"s";
-    heart.style.fontSize=(Math.random()*20+15)+"px";
-    document.body.appendChild(heart);
-}
-</script>
+</section>
 
 </body>
 </html>
